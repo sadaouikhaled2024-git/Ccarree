@@ -20,6 +20,7 @@ export interface IUser extends Document {
   confirmationToken?: string;
   confirmationExpires?: Date;
   favorites: mongoose.Types.ObjectId[];
+  blockedUsers: mongoose.Types.ObjectId[];
   role: UserRole;
   isBanned: boolean;
   bannedReason?: string;
